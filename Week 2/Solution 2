@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+	double o=0;
+	scanf("%lf",&o);
+	if(o - int(o) != 0 || o < 50 || int(o)%50 != 0)
+	{
+		printf("error");
+	}
+	else
+	{
+		long money=o , m1000=0 , m500=0 , m100=0 , m50=0;
+		m1000 = money/1000;
+		money -= (money/1000)*1000;
+		m500 = money/500;
+		money -= (money/500)*500;
+		m100 = money/100;
+		money -= (money/100)*100;
+		m50 = money/50;
+		money -= (money/50)*50;
+		printf("%ld, %ld, %ld, %ld",m1000,m500,m100,m50);
+	}
+	return 0;
+}
