@@ -1,1 +1,16 @@
-
+#include <stdio.h>
+int main()
+{
+	float a=0 , b=0 , divide=0;
+	int sum=0 , minus=0 , mul=0;
+	scanf("%f %f",&a,&b);
+	sum = a+b;
+	minus = a-b;
+	mul = a*b;
+	divide = a/b;
+	printf("+ : %d\n",sum);
+	printf("- : %d\n",minus);
+	printf("x : %d\n",mul);
+	printf("/ : %.2f\n",divide);
+	return 0;
+}
