@@ -1,1 +1,18 @@
-
+#include <stdio.h>
+int main()
+{
+	int n=0 , counti=1 , countj=1;
+	scanf("%d",&n);
+	while (counti <= n)
+	{
+		countj=1;
+		while(countj <= n)
+		{
+			printf("*");
+			countj++;
+		}
+		counti++;
+		printf("\n");
+	}
+	return 0;
+}
